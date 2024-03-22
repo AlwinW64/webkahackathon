@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, aqua, aquamarine);
+  background-size: cover;
+  height: 100px; 
+}
+
+.left-section,
+.center-section,
+.right-section {
+  height: 100%; 
+}
+
+.left-section {
+  width: 15%;
+}
+
+#logo {
+  width: 44%;
+}
+
+.center-section {
+  width: 70%; 
+  text-align: center; 
+}
+
+.right-section {
+  width: 15%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#signin-button {
+  background: linear-gradient(to right, red, green); /* Blue background color */
+  color: white; /* White text color */
+  height: 40px;
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+#signin-button:hover {
+  background: linear-gradient(to right, green, blue); /* Darker blue color on hover */
+}
+
+nav ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block; 
+  margin: 0 10px;
+  position: relative; /* Required for positioning the pseudo-element */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 40px;
+  opacity: 1; 
+  margin-right: auto;
+  margin-left: auto;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover::before {
+  width: 100%;
+}
+
+/* -----------------------------------------------------------*/
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  align-items: center;
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.about-content {
+  width: 60%;
+  height: 252px;
+  margin-top: -2px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url("/images/w1.jpg"); /* Adjust width as needed */
+}
+
+#eventplanner {
+  font-size: 500%;
+  font-family: Tahoma, sans-serif;
+}
+
+.about-image {
+  width: 40%; /* Adjust width as needed */
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 650px;
+}
+
+/* ----------------------------------------------------------------------*/
+
+.hackathon {
+  height: 700px;
+  font-size: 200%;
+  text-align: center;
+  padding-top: 300px;
+  background-image: url("/images/hackathon_img1.jpg");
+}
